@@ -83,4 +83,5 @@ module('Integration | Component | rentals', function (hooks) {
       .dom('.rentals .results li:nth-of-type(3)')
       .containsText('Downtown Charm');
   });
+
 });

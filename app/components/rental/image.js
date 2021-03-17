@@ -9,4 +9,4 @@ export default class RentalImageComponent extends Component {
     this.isLarge = !this.isLarge;
   }
 
-  }
+}

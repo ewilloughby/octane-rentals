@@ -1,10 +1,10 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
 
-module('Unit | Model | rental', function(hooks) {
+module('Unit | Model | rental', function (hooks) {
   setupTest(hooks);
-  
-  test('it has the right type', function(assert) {
+
+  test('it has the right type', function (assert) {
     let store = this.owner.lookup('service:store');
     let rental = store.createRecord('rental', {
       id: 'grand-old-mansion',
@@ -37,4 +37,5 @@ module('Unit | Model | rental', function(hooks) {
     rental.category = 'Estate';
     assert.equal(rental.type, 'Standalone');
   });
+
 });

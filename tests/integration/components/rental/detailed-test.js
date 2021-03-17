@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | rental/detailed', function(hooks) {
+module('Integration | Component | rental/detailed', function (hooks) {
   setupRenderingTest(hooks);
 
   hooks.beforeEach(function () {
@@ -51,4 +51,5 @@ module('Integration | Component | rental/detailed', function(hooks) {
     assert.dom('article .image').exists();
     assert.dom('article .map').exists();
   });
+
 });

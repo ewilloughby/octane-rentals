@@ -19,5 +19,5 @@ export default class RentalModel extends Model {
       return 'Standalone';
     }
   }
-  
+
 }

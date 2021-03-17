@@ -7,5 +7,5 @@ export default class IndexRoute extends Route {
   async model() {
     return this.store.findAll('rental');
   }
-  
+
 }

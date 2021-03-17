@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render, click } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | rental/image', function(hooks) {
+module('Integration | Component | rental/image', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders the given image', async function (assert) {
@@ -15,10 +15,10 @@ module('Integration | Component | rental/image', function(hooks) {
     `);
 
     assert
-    .dom('.image img')
-    .exists()
-    .hasAttribute('src', '/assets/images/teaching-tomster.png')
-    .hasAttribute('alt', 'Teaching Tomster');
+      .dom('.image img')
+      .exists()
+      .hasAttribute('src', '/assets/images/teaching-tomster.png')
+      .hasAttribute('alt', 'Teaching Tomster');
   });
 
   test('clicking on the component toggles its size', async function (assert) {
@@ -44,4 +44,5 @@ module('Integration | Component | rental/image', function(hooks) {
     assert.dom('.image').doesNotHaveClass('large');
     assert.dom('.image small').hasText('View Larger');
   });
+
 });

@@ -4,7 +4,7 @@ import { render, find } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 import ENV from 'super-rentals/config/environment';
 
-module('Integration | Component | map', function(hooks) {
+module('Integration | Component | map', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders a map image for the specified parameters', async function (assert) {
@@ -17,12 +17,12 @@ module('Integration | Component | map', function(hooks) {
     />`);
 
     assert
-    .dom('.map img')
-    .exists()
-    .hasAttribute('alt', 'Map image at coordinates 37.7797,-122.4184')
-    .hasAttribute('src')
-    .hasAttribute('width', '150')
-    .hasAttribute('height', '120');
+      .dom('.map img')
+      .exists()
+      .hasAttribute('alt', 'Map image at coordinates 37.7797,-122.4184')
+      .hasAttribute('src')
+      .hasAttribute('width', '150')
+      .hasAttribute('height', '120');
 
     let { src } = find('.map img');
     let token = encodeURIComponent(ENV.MAPBOX_ACCESS_TOKEN);
@@ -140,4 +140,5 @@ module('Integration | Component | map', function(hooks) {
       .hasAttribute('width', '150')
       .hasAttribute('height', '120');
   });
+
 });
