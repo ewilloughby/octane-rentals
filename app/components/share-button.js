@@ -28,4 +28,5 @@ export default class ShareButtonComponent extends Component {
 
     return url;
   }
+
 }
