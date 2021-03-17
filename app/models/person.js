@@ -4,4 +4,5 @@ export default class PersonModel extends Model {
   @attr title;
   @attr name;
   @attr birthday;
+  
 }
