@@ -51,5 +51,4 @@ module('Integration | Component | rental/detailed', function (hooks) {
     assert.dom('article .image').exists();
     assert.dom('article .map').exists();
   });
-
 });

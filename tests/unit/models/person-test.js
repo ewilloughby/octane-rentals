@@ -10,5 +10,4 @@ module('Unit | Model | person', function (hooks) {
     let model = store.createRecord('person', {});
     assert.ok(model);
   });
-
 });

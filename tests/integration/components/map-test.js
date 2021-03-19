@@ -140,5 +140,4 @@ module('Integration | Component | map', function (hooks) {
       .hasAttribute('width', '150')
       .hasAttribute('height', '120');
   });
-
 });
