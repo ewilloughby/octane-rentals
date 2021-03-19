@@ -6,5 +6,4 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
   buildURL(...args) {
     return `${super.buildURL(...args)}.json`;
   }
-
 }
